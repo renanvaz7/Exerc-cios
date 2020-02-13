@@ -13,25 +13,25 @@ namespace ReceberNúmeros
             string resposta = "0";
             while (resposta.Equals("sim"))
             {
-                int n;
-                int b = 0;
+                int cont=1;                
+                int[] N = new int[cont];
+                //int n;
+                //int b = 0;
                 int i;
-                for (i = 0; i < 2; i++)
+                for (i = 0; i < cont; i++)
                 {
                     Console.WriteLine("Digite um número");
-                    n = Int32.Parse(Console.ReadLine());
+                    N[i] = Int32.Parse(Console.ReadLine());
 
                     Console.WriteLine("Deseja Finalizar?");
                     resposta = Console.ReadLine();
                                         
-                }
-                if (n > b)
-                {
-                    b = n;
-                }
-                Console.WriteLine("O maior valor é: " + n);
+                }                
+               //Console.WriteLine("O maior valor é: " + n);
+                cont++;
             }                   
                       
         }
+        
     }
 }

@@ -10,17 +10,17 @@ namespace Soma_simples
     {
         static void Main(string[] args)
         {
-            float a, b, c;
+            float val1, val2, soma;
 
             Console.WriteLine("Digite um número");
-            a = float.Parse(Console.ReadLine());
+            val1 = float.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite outro valor");
-            b = float.Parse(Console.ReadLine());
+            val2 = float.Parse(Console.ReadLine());
 
-            c = a + b;
+            soma = val1 + val2;
 
-            Console.WriteLine("A soma dos números é: " + c);
+            Console.WriteLine("A soma dos números é: " + soma);
             Console.ReadLine();
         }
     }

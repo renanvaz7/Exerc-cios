@@ -13,16 +13,15 @@ namespace Maior_e_Menor_ou_Igual
             int count = 0;
             while (count<11)
             {
-                int a;
-                int b=0;
+                int resp, memo = 0;
                 Console.WriteLine("Digite um número");
-                a = int.Parse(Console.ReadLine());
+                resp = int.Parse(Console.ReadLine());
                 
-                if (a > b)
+                if (resp > memo)
                 {
-                    b = a;
+                    memo = resp;
                 }
-                Console.WriteLine("O maior valor é: " + b);
+                Console.WriteLine("O maior valor é: " + memo);
                 
                 count++;
             }
